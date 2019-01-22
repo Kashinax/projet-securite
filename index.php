@@ -10,7 +10,7 @@ if(isset($_POST['formconnexion'])) {
    $mailconnect = htmlspecialchars($_POST['mailconnect']);
    $mdpconnect = sha1($_POST['mdpconnect']);
    if(!empty($mailconnect) AND !empty($mdpconnect)) {
-      $requser = $bdd->prepare("SELECT * FROM membres WHERE username = '$mailconnect' AND mail = '$mdpconnect'");
+      $requser = $bdd->prepare("SELECT * FROM membres WHERE username = '$mailconnect'");
       $requser->execute(array($mailconnect, $mdpconnect));
       $userexist = $requser->rowCount();
       if($userexist == 1) {
@@ -46,6 +46,7 @@ if(isset($_POST['formconnexion'])) {
               <br /><br />
               <input type="submit" name="formconnexion" value="Se connecter !" />
           	</form>
+            <a href="register.php">S'enregistrer</a>
           </div>
         </div>
       </div>
