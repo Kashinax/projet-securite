@@ -1,0 +1,48 @@
+body {
+  font-family: "Raleway", sans-serif !important;
+  height: 100vh;
+}
+.connexion {
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: bold !important;
+  background-color: #14213D;
+  color: white !important;
+  padding: 1rem 0;
+  margin-bottom: 1rem !important;
+}
+form {
+  padding: 4rem 0;
+  border: 5px solid #F4C95D;
+}
+input {
+  text-align: center;
+  width: 100%;
+}
+input[type=submit] {
+  padding: .4rem .8rem;
+  width: auto;
+  background-color: #F4C95D;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem !important;
+}
+input[type=submit]:hover {
+  color: white;
+  background-color: #14213D;
+}
+.register {
+  padding: 1rem 0;
+}
+.register a {
+  color: #14213D;
+  border-bottom: 1px solid #14213D;
+  padding-bottom: .5rem;
+}
+.register a:hover {
+  color: #F4C95D;
+  border-bottom: 1px solid #F4C95D;
+  text-decoration: none;
+}

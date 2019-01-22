@@ -32,21 +32,31 @@ if(isset($_POST['formconnexion'])) {
   <head>
     <meta charset="utf-8">
     <title>L'art de la sécurité</title>
+    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
   </head>
-  <body>
-    <div class="block-global block-home">
+  <body class="d-flex align-items-center">
+    <div class="block-global block-home w-100">
       <div class="container">
-        <div class="row">
-          <div class="col-6">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-6 connexion">
             <h2>Connexion</h2>
           	<form action="" method="POST">
-              <input type="username" name="mailconnect" placeholder="Username" />
-              <input type="password" name="mdpconnect" placeholder="Mot de passe" />
-              <br /><br />
-              <input type="submit" name="formconnexion" value="Se connecter !" />
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-5">
+                  <input type="username" name="mailconnect" placeholder="Username" />
+                </div>
+                <div class="col-10 col-md-5">
+                  <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+                </div>
+              </div>
+              <input type="submit" name="formconnexion" value="Se connecter" />
           	</form>
-            <a href="register.php">S'enregistrer</a>
+            <div class="register">
+              <a href="register.php">S'enregistrer</a>
+            </div>
           </div>
         </div>
       </div>
